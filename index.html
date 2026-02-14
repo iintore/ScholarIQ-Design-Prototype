@@ -60,7 +60,7 @@
         @keyframes sad-tremble {
           0%, 100% { transform: translateX(0); }
           10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-          20%, 40%, 60%, 80% { transform: translateX(2px); }
+          20%, 40%, 60%, 80% { transform: translateX(4px); }
         }
         .animate-mascot-happy { animation: happy-float 2s ease-in-out infinite; }
         .animate-mascot-sad { animation: sad-tremble 0.8s cubic-bezier(.36,.07,.19,.97) both infinite; }
@@ -83,5 +83,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- Explicit entry point script -->
+    <script type="module" src="index.tsx"></script>
 </body>
 </html>

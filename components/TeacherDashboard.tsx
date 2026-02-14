@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Plus, ChevronRight, BookOpen, UserPlus, Search, Filter, X, ArrowRight, Upload, BookText as BookIcon } from 'lucide-react';
-import SubmissionReviewModal from './SubmissionReviewModal';
+import SubmissionReviewModal from './SubmissionReviewModal.tsx';
 
 // Full Page Assignment Creation Component
 const CreateAssignmentView = ({ onBack }: { onBack: () => void }) => {

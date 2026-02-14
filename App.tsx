@@ -1,11 +1,11 @@
 
 import React, { useState } from 'react';
-import { UserRole } from './types';
-import Sidebar from './components/Sidebar';
-import TeacherDashboard from './components/TeacherDashboard';
-import ParentDashboard from './components/ParentDashboard';
-import StudentExperience from './components/StudentExperience';
-import Header from './components/Header';
+import { UserRole } from './types.ts';
+import Sidebar from './components/Sidebar.tsx';
+import TeacherDashboard from './components/TeacherDashboard.tsx';
+import ParentDashboard from './components/ParentDashboard.tsx';
+import StudentExperience from './components/StudentExperience.tsx';
+import Header from './components/Header.tsx';
 
 const App: React.FC = () => {
   const [role, setRole] = useState<UserRole>(UserRole.TEACHER);
