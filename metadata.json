@@ -1,0 +1,7 @@
+{
+  "name": "ScholarIQ",
+  "description": "A premium educational platform for Rwandan primary schools to manage, assign, and monitor reading assignments in Kinyarwanda.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

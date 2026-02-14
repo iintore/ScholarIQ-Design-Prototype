@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarIQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist-sans/style.css">
+    <style>
+        body {
+            font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF; /* Main background white */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #1A1A1A;
+            overflow-x: hidden;
+        }
+        
+        .card-flat {
+          background: white;
+          border: 1px solid #F1F1F1;
+          border-radius: 16px;
+        }
+
+        /* Container background as seen in Parent screenshot (Recent Assignments area) */
+        .container-gray {
+          background-color: #F8F9FA;
+          border-radius: 24px;
+          border: 1px solid #F1F1F1;
+        }
+
+        .solid-icon-sq {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          border-radius: 12px;
+          width: 48px;
+          height: 48px;
+          flex-shrink: 0;
+          box-shadow: none !important;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 5px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #E5E7EB;
+          border-radius: 10px;
+        }
+
+        @keyframes happy-float {
+          0%, 100% { transform: translateY(0) rotate(0); }
+          50% { transform: translateY(-20px) rotate(3deg); }
+        }
+        @keyframes sad-tremble {
+          0%, 100% { transform: translateX(0); }
+          10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
+          20%, 40%, 60%, 80% { transform: translateX(2px); }
+        }
+        .animate-mascot-happy { animation: happy-float 2s ease-in-out infinite; }
+        .animate-mascot-sad { animation: sad-tremble 0.8s cubic-bezier(.36,.07,.19,.97) both infinite; }
+
+        .passage-slide-in { animation: slide-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .passage-slide-out { animation: slide-out 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        @keyframes slide-in { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+        @keyframes slide-out { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.475.0",
+    "react/": "https://esm.sh/react@^19.0.0/",
+    "react": "https://esm.sh/react@^19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.0.0/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
